@@ -40,57 +40,20 @@ namespace APIMantenimiento.Middleware
         {
             try
             {
-                if (ValidateHandleSecretKeyAsync(httpContext).Result)
+                if (true)
                 {
                     await _next(httpContext);
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"Masters Microservice. Something went wrong: {ex.Message}");
+                _logger.LogError(ex, $"API Mantenimiento. Something went wrong: {ex.Message}");
                 await HandleGlobalExceptionAsync(httpContext, ex);
             }
         }
         #endregion Public
 
         #region Private
-
-        private async Task<bool> ValidateHandleSecretKeyAsync(HttpContext context)
-        {
-            bool result = true;
-            string IP = GetIPAddress(context);
-
-            string secretKeyAPI = _configuration[AppSettings.APP_SALT];
-
-            if (!context.Request.Headers.ContainsKey(AppSettings.SECURITY_KEY_ID))
-                /*para corregir el error en security_key_id se debe crear ese metodo en la clase Appsettings*/
-            {
-                result = false;
-            }
-            else if (string.IsNullOrEmpty(secretKeyAPI) || string.IsNullOrEmpty(context.Request.Headers[AppSettings.SECURITY_KEY_ID].ToString()))
-            {
-                result = false;
-
-            }
-            else if (!secretKeyAPI.Trim().ToUpper().Equals(context.Request.Headers[AppSettings.SECURITY_KEY_ID].ToString().Trim().ToUpper()))
-            {
-                result = false;
-            }
-
-            if (!result)
-            {
-                context.Response.ContentType = AppSettings.CONTENT_TYPE;
-                context.Response.StatusCode = (int)HttpStatusCode.Forbidden;
-                await context.Response.WriteAsync(new HttpErrorResponse()
-                {
-                    StatusCode = context.Response.StatusCode,
-                    Description = ServiceMessages.FORBIDDEN,
-                    ExceptionMessage = ServiceMessages.FORBIDDEN_MESSAGE
-                }.ToString());
-            }
-
-            return result;
-        }
 
         /// <summary>
         /// Handle Exception Async
@@ -111,18 +74,7 @@ namespace APIMantenimiento.Middleware
                 StackTrace = exception.StackTrace
             }.ToString()));
         }
-        /// <summary>
-        /// Method to get IP from the client making request
-        /// </summary>
-        /// <returns>string with IP or Port</returns>
-        /// <author>David Estepa</author>
-        /// <date>28/11/2022</date>
-        private String GetIPAddress(HttpContext httpContext)
-        {
-            string? ClientIPAddr = httpContext.Connection.RemoteIpAddress?.ToString();
 
-            return ClientIPAddr;
-        }
         #endregion Private
     }
 }

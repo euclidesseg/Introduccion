@@ -126,4 +126,10 @@
   <data name="RESPONSE_FORBIDDEN_KEY" xml:space="preserve">
     <value>Forbidden</value>
   </data>
+  <data name="RESPONSE_OK" xml:space="preserve">
+    <value>Process succesfully executed</value>
+  </data>
+  <data name="RESPONSE_UNAUTHORIZED" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
 </root>

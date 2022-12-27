@@ -86,5 +86,23 @@ namespace APIMantenimiento.Models.Resources {
                 return ResourceManager.GetString("RESPONSE_FORBIDDEN_KEY", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Process succesfully executed.
+        /// </summary>
+        internal static string RESPONSE_OK {
+            get {
+                return ResourceManager.GetString("RESPONSE_OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Unauthorized.
+        /// </summary>
+        internal static string RESPONSE_UNAUTHORIZED {
+            get {
+                return ResourceManager.GetString("RESPONSE_UNAUTHORIZED", resourceCulture);
+            }
+        }
     }
 }

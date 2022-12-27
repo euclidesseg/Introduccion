@@ -7,12 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Models\Entities\" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +19,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>AppSettings.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\Resources\Procedures.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Procedures.resx</DependentUpon>
     </Compile>
     <Compile Update="Models\Resources\ServiceMessages.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -32,6 +36,10 @@
     <EmbeddedResource Update="Models\Resources\AppSettings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AppSettings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\Resources\Procedures.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Procedures.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Models\Resources\ServiceMessages.resx">
       <Generator>ResXFileCodeGenerator</Generator>

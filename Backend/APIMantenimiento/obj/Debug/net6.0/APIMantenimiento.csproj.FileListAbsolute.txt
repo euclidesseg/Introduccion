@@ -30,3 +30,14 @@ C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\obj\D
 C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\obj\Debug\net6.0\APIMantenimiento.pdb
 C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\obj\Debug\net6.0\APIMantenimiento.genruntimeconfig.cache
 C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\obj\Debug\net6.0\ref\APIMantenimiento.dll
+C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\obj\Debug\net6.0\APIMantenimiento.Models.Resources.AppSettings.resources
+C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\obj\Debug\net6.0\APIMantenimiento.Models.Resources.ServiceMessages.resources
+C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\obj\Debug\net6.0\APIMantenimiento.csproj.GenerateResource.cache
+C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\obj\Debug\net6.0\APIMantenimiento.Models.Resources.Procedures.resources
