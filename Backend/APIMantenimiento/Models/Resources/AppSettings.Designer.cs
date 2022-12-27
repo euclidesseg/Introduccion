@@ -68,5 +68,14 @@ namespace APIMantenimiento.Models.Resources {
                 return ResourceManager.GetString("CONTENT_TYPE_KEY", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a .
+        /// </summary>
+        internal static string SECURITY_KEY_ID {
+            get {
+                return ResourceManager.GetString("SECURITY_KEY_ID", resourceCulture);
+            }
+        }
     }
 }
