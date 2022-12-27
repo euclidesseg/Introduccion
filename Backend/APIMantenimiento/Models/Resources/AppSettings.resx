@@ -120,4 +120,7 @@
   <data name="CONTENT_TYPE_KEY" xml:space="preserve">
     <value>application/json</value>
   </data>
+  <data name="SECURITY_KEY_ID" xml:space="preserve">
+    <value />
+  </data>
 </root>

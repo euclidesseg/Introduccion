@@ -63,6 +63,7 @@ namespace APIMantenimiento.Middleware
             string secretKeyAPI = _configuration[AppSettings.APP_SALT];
 
             if (!context.Request.Headers.ContainsKey(AppSettings.SECURITY_KEY_ID))
+                /*para corregir el error en security_key_id se debe crear ese metodo en la clase Appsettings*/
             {
                 result = false;
             }
