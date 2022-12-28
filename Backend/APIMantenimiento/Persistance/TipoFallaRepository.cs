@@ -16,7 +16,7 @@ namespace APIMantenimiento.Persistance
         public async Task<IReadOnlyList<TipoFalla>> GetAllAsync()
         {
             using var conn = new SqlConnection(_database);
-            var result = await conn.QueryAsync<TipoFalla>($"{SP.EXEC} {SP.MAESTROS_SP_TIPOFALLA_GETALL}");
+            IEnumerable<TipoFalla> result = await conn.QueryAsync<TipoFalla>($"{SP.EXEC} {SP.MAESTROS_SP_TIPOFALLA_GETALL}");
             await conn.CloseAsync();
             await conn.DisposeAsync();
             return result.ToList();

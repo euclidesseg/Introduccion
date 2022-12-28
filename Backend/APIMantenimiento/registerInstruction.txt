@@ -1,0 +1,22 @@
+GET = Consult datos
+POST = Send Date
+PUT = Update date
+DELETE = Delete date
+
+CLASE PROGRAM.CS(
+	en esta clase se configuran todos los servicios
+)
+
+carpeta Models(
+	tipos de datos que se van a manejar
+	archivos de recursos 
+	dto objetos de transferencia de datos
+
+)
+
+para agregar una dependencia 
+se agrega en la clase DependencyInjectionConfig
+de la siguiente manera
+
+y se registra en el program.css de la siguiente manera
+builder.Services.AddAutoMapperConfig();
