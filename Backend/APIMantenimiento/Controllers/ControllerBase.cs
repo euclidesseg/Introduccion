@@ -5,6 +5,8 @@ using System.Net;
 namespace APIMantenimiento.Controllers
 {
     [Produces("application/json")]
+    /*Produces qu genere como respuesta un json */
+    /*Consultar mediaType*/
     [ApiController]
     public class BaseController : ControllerBase
     {

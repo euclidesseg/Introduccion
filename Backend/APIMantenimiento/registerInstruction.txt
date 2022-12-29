@@ -3,20 +3,25 @@ POST = Send Date
 PUT = Update date
 DELETE = Delete date
 
-CLASE PROGRAM.CS(
-	en esta clase se configuran todos los servicios
-)
 
-carpeta Models(
-	tipos de datos que se van a manejar
-	archivos de recursos 
-	dto objetos de transferencia de datos
+1 crear la connection string en el archivo appsetting.json
 
-)
+=============================================================================================================
+2 Crear el controlador principal para la tabla que consultara
+  el cual ira en la carpeta controller, si no esta crearla.
+  en realidad ese sera la clase controlBase 
 
-para agregar una dependencia 
-se agrega en la clase DependencyInjectionConfig
-de la siguiente manera
+  Controladores: 
+  clases que controlan las solicitudes entrantes a la aplicación, recuperan datos del modelo y,
+  a continuación, especifican plantillas de vista que devuelven una respuesta al cliente
 
-y se registra en el program.css de la siguiente manera
-builder.Services.AddAutoMapperConfig();
+=============================================================================================================
+3 Creamos una carpeta Models donde iran los modelos de transperencia de objetos para la clase
+  preferible crear una carpeta  DTOs para poner ahi dentro los modelos de transferencia
+
+=============================================================================================================
+4 Luego de configurar la clase controladora creamos una carpeta llamada conexion
+  dentro de ella creamos la clase ConexionBd y la configuramos
+
+=============================================================================================================
+5 creamos la carpeta persistance que figura como la capa de datos 

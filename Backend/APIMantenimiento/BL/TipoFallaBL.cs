@@ -16,7 +16,7 @@ namespace APIMantenimiento.BL
         public async Task<IReadOnlyList<TipoFallaDTO>?> GetAll()
         {
             var resulDb = await _tipoFallaRepository.GetAllAsync();
-            /*entramoa a la carpeta DTOs creamos una nueva carpeta llamada cliente creamos la clase TipoFallaDTO
+            /*entramos a la carpeta DTOs creamos una nueva carpeta llamada cliente creamos la clase TipoFallaDTO
              poara controlar los datos que se van a enviar al cliente*/
             if (resulDb != null && resulDb.Count > 0)
                 return _mapper.Map<List<ProductsDTO>>(resulDb);

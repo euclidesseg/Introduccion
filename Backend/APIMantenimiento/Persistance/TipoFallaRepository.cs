@@ -8,8 +8,10 @@ namespace APIMantenimiento.Persistance
     public class TipoFallaRepository
     {
         private readonly string? _database;
+        /*inyeccion de la dependencia*/
         public TipoFallaRepository(IConfiguration configuration)
-        {        /*la conecction string se agrega en el appsettings.json*/
+
+        {   /*la conecction string se agrega en el appsettings.json*/
             _database = configuration.GetConnectionString("DbConnectionSecurity");
         }
 

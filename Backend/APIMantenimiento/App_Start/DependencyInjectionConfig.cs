@@ -12,9 +12,10 @@ namespace APIMantenimiento.App_Start
         /// <param name="services"></param>
         internal static void AddDependenciesInjectionConfig(this IServiceCollection services)
         {
-            #region Application BL
+            #region ApplicationBL
 
             services.AddScoped(typeof(TipoFallaBL), typeof(TipoFallaBL));
+        
             #endregion
 
             #region Repository
