@@ -25,3 +25,17 @@ DELETE = Delete date
 
 =============================================================================================================
 5 creamos la carpeta persistance que figura como la capa de datos 
+
+=============================================================================================================
+6 creamos la carpeta BL que figura como la capa de negocios
+  esta capa va a tener comunicacion directa con la capa de datos es decir, que debemos inportar la clase
+  TipofallasRepository para hacer uso de ella
+
+  =============================================================================================================
+  la inyeccion de dependencia es un patron de diseño que se usa para quitarle a una clase la responsabilidad de 
+  tener que crear un objeto
+
+  =============================================================================================================
+  7 se crea la carpea App_Start 
+    En esta carpeta se crean las excepciones, las inyecciones de dependencias, y las MapperConfig
+    esta ultima nos permite mapear la informacion de las DTO

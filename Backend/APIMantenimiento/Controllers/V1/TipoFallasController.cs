@@ -18,8 +18,8 @@ namespace APIMantenimiento.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            string result = "OK";
-            if (true)
+            var result = await _tipoFallaBL.GetAll();
+            if (result != null)
             {
                 return await GetResponseAsync(HttpStatusCode.OK, ServiceMessages.OK, result);
             }

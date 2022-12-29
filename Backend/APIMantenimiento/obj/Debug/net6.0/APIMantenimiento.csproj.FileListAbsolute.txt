@@ -41,3 +41,5 @@ C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\bin\D
 C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\obj\Debug\net6.0\APIMantenimiento.Models.Resources.Procedures.resources
+C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Euclides-Perez\source\repos\Introduccion\Backend\APIMantenimiento\bin\Debug\net6.0\Dapper.dll
